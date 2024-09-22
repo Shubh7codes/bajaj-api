@@ -10,7 +10,7 @@ function App() {
       setError('');
       console.log(jsonInput)
       const payload = JSON.parse(jsonInput); // Parse input
-      const res = await fetch('http://localhost:3001/bfhl', {
+      const res = await fetch('http://api-backend-production-bfhl.up.railway.app/bfhl', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload),
