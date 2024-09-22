@@ -10,7 +10,7 @@ function App() {
       setError('');
       console.log(jsonInput)
       const payload = JSON.parse(jsonInput); // Parse input
-      const res = await fetch('https://api-backend-bbrx.onrender.combfhl', {
+      const res = await fetch('https://api-backend-bbrx.onrender.com/bfhl', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload),
